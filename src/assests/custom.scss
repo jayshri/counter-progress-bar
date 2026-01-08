@@ -1,0 +1,27 @@
+$orange : #FF986A;
+$box-shadow: 0px 0px 30px $orange;
+
+.custom-font {
+    font-size: 40px;
+    font-weight: 700;
+    font-style: italic;
+    font-family: serif;
+}
+.bg-custom {
+    color: #0f0e0e !important;
+    background-color: #dedede;
+}
+.bg-orange {
+    background-color: $orange !important;
+}
+.custom-progress{
+    box-shadow: $box-shadow;
+    height: 30px;
+}
+.custom-btn{
+    box-shadow: 0px 0px 15px #574964;
+    padding: 3px 8px 5px 8px;
+}
+.custom-form{
+    box-shadow: 0px 0px 15px #574964;
+}
