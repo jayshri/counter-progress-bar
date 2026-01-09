@@ -33,6 +33,14 @@ function FunctionalCounter() {
             setCount(intVal);
         }    
     }
+    const reset = () => {
+        setCount(0);
+    };
+     const handleKeyDown = (e) => {
+        if (e.key === 'Enter') {
+            reset();
+        }
+    };
  
   return (
     <div className="d-flex justify-content-center align-items-center bg-custom vh-100 text-light">
@@ -40,8 +48,8 @@ function FunctionalCounter() {
         <Row className="justify-content-center">
         <p className="custom-font"> Progress Bar </p>
           <Col sm="9" md="6" lg="6">
-            <Progress color="orange" className="my-3 custom-progress rounded-pill" value={count}>
-                {count}%
+            <Progress color="orange" className="my-3 custom-progress rounded-pill" value={count || 0}>
+                {count || 0}%
             </Progress>
           </Col>
         </Row>
@@ -60,6 +68,7 @@ function FunctionalCounter() {
                     className="custom-form" 
                     max={100} 
                     maxLength={3}
+                    onKeyDown={handleKeyDown}
                     value={count}
                     aria-label="Counter value" />
                 </Col>
@@ -70,6 +79,16 @@ function FunctionalCounter() {
                         <FaPlus/> 
                     </Button>  
                 </Col>
+            </Row>
+            <Row className="justify-content-center mt-3">
+                <Button
+                size="sm"
+                onClick={reset}
+                aria-label="Reset counter"
+                className="bg-light text-dark reset-btn border-0 px-3 py-1 rounded-pill" 
+                >
+                    Reset
+                </Button>
             </Row>
         </Col>
         
