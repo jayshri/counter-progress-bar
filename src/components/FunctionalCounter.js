@@ -1,6 +1,6 @@
 import React from 'react';
 import { Container, Progress, Row, Col, Button, Input } from 'reactstrap';
-import '../assests/custom.scss';
+import '../assets/custom.scss';
 import { FaPlus } from "react-icons/fa";
 import { FaMinus } from "react-icons/fa6";
 import { useState } from 'react';
@@ -49,16 +49,24 @@ function FunctionalCounter() {
             <Row xs={3} className="justify-content-center align-items-center">
                 <Col className="text-end"> 
                     <Button className="bg-light text-dark border-0 custom-btn rounded-circle me-2" size="sm"
-                    onClick={decrement}> 
+                    onClick={decrement}
+                    aria-label="Decrement counter"> 
                         <FaMinus/> 
                     </Button>  
                 </Col>
                 <Col md="3" lg="2">
-                    <Input type="number" onChange={handleChange}className="custom-form" max={100} maxLength={3} />
+                    <Input type="number" 
+                    onChange={handleChange}
+                    className="custom-form" 
+                    max={100} 
+                    maxLength={3}
+                    value={count}
+                    aria-label="Counter value" />
                 </Col>
                 <Col className="text-start"> 
                     <Button className="bg-light text-dark border-0 custom-btn rounded-circle me-2" size="sm"
-                    onClick={increment}> 
+                    onClick={increment}
+                    aria-label="Increment counter"> 
                         <FaPlus/> 
                     </Button>  
                 </Col>
