@@ -1,70 +1,67 @@
-# Getting Started with Create React App
+Counter Progress Bar (React)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A simple, polished React UI project that demonstrates state management, input validation, and responsive layout using modern React practices.
 
-## Available Scripts
+🔗 Live Demo:
+https://jayshri.github.io/counter-progress-bar/
 
-In the project directory, you can run:
+⸻
 
-### `npm start`
+Overview
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+This project implements a progress bar counter that allows users to increment, decrement, reset, or manually input a value between 0 and 100.
+It focuses on clean UI behavior, edge-case handling, and accessibility.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+⸻
 
-### `npm test`
+Features :
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+	•	React functional component using useState
+	•	Progress bar that updates from 0% → 100%
+	•	Increment / Decrement buttons with boundary protection
+	•	Responsive layout using Reactstrap
+	•	Accessible UI with aria-labels
 
-### `npm run build`
+⸻
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Tech Stack : 
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+	•	React (Create React App)
+	•	Reactstrap (Bootstrap components)
+	•	Bootstrap 5
+	•	SCSS for custom styling
+	•	React Icons
+	•	GitHub Pages for deployment
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+⸻
 
-### `npm run eject`
+How to View 
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Option 1: View Live Demo
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Open in browser:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+https://jayshri.github.io/counter-progress-bar/
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Option 2: Run Locally
 
-## Learn More
+git clone https://github.com/jayshri/counter-progress-bar.git
+cd counter-progress-bar
+npm install
+npm start
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+The app will run at:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+http://localhost:3000
 
-### Code Splitting
+⸻
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Possible Enhancements :
 
-### Analyzing the Bundle Size
+	•	Convert the project to TypeScript
+	•	Add unit tests with React Testing Library
+	•	Add visual feedback when limits (0 / 100) are reached
+	•	Add dark/light theme toggle
+	•	Refactor into smaller reusable components
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+⸻
